@@ -1,6 +1,9 @@
 # Sublime Text - Save Copy As
 
-** Siang July 31st small modification: put extension at the end**
+### Siang's Notes
+1. **July 31st small modification: put extension at the end**
+2. Package Control > Add Repository: Add `https://github.com/csianglim/saveCopyAs/`
+3. Package Control > Install Package: Install saveCopyAs
 
 Save copy of a file without opening it.
 
