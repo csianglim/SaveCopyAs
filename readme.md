@@ -1,5 +1,7 @@
 # Sublime Text - Save Copy As
 
+** Siang July 31st small modification: put extension at the end**
+
 Save copy of a file without opening it.
 
 Tested on
