@@ -12,7 +12,9 @@ class SaveCopyAsCommand(sublime_plugin.TextCommand):
 
         now = datetime.datetime.now()
         now = now.strftime("%Y%m%d")
-        newFileName = fileName + "." + now;
+        
+        fileName, fileExtension = os.path.splitext(fileName)
+        newFileName = fileName + "-" + now + fileExtension;
 
         self.view.window().show_input_panel("Copy File Name:", newFileName, self.save_copy, None, None)
 
