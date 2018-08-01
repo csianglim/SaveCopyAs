@@ -14,7 +14,7 @@ class SaveCopyAsCommand(sublime_plugin.TextCommand):
         now = now.strftime("%Y%m%d")
         
         fileName, fileExtension = os.path.splitext(fileName)
-        newFileName = fileName + "-" + now + fileExtension;
+        newFileName = fileName + "-backup-" + now + fileExtension;
 
         self.view.window().show_input_panel("Copy File Name:", newFileName, self.save_copy, None, None)
 
